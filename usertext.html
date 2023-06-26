@@ -108,75 +108,204 @@
     <!-- Header End -->
 
     <!-- user detail start -->
-      <section style="margin-top: 160px;">
+    <section style="margin-top: 160px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-5">
-                    <div class="tab-vertical">
-                        <ul class="nav nav-tabs">
-                            <li class="">
-                                <div class=" bg-white shadow" id="home-vertical-tab">
-                                    <div class="user-name d-flex shadow" >
-                                        <img src="img/logo-carousel/profile-pic-male_4811a1.svg" alt="">
-                                        <h4>Hello</h4>
-                                    </div>
-                                </div>
-                            </li>
-                            <div class="shadow">
-                            <li class="">
-                                <div class="bg-white" id="home-vertical-tab" data-toggle="tab" href="#home-vertical" role="tab" aria-controls="home" aria-selected="true">
-                                    <div class="order-title d-flex justify-content-between">
-                                        <i class="fa fa-upload" aria-hidden="true"></i>
-                                        <h5>MY ORDERS</h5>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                    </div>
-                                    <hr>
-                                </div>
-                            </li>
-                            <li class="">
-                                <div class="bg-white" id="profile-vertical-tab" data-toggle="tab" href="#profile-vertical" role="tab" aria-controls="profile" aria-selected="false">
-                                    <div class="account-details d-flex justify-content-between">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <h5>ACCOUNT SETTING</h5>
-                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="account-info">
-                                        <a href="#">
-                                        <h6 class="mr-4 mt-3">Profile Information</h6>
-                                        </a>
-                                        <a href="">
-                                        <h6 class="mr-3 mt-3">Manage Addressess</h6>
-                                        </a>
-                                       <hr>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="">
-                                <a class="bg-white" id="contact-vertical-tab" data-toggle="tab" href="#contact-vertical" role="tab" aria-controls="contact" aria-selected="false">
-                                    <div class="log-out d-flex">
-                                        <i class="fa fa-sign-in ml-3" aria-hidden="true"></i>
-                                        <h5 class="ml-5 pb-4">Logout</h5>
-                                    </div>
-                                </a>
-                            </li>
-                            </div>
-                        </ul>
-                        
+                    <div class="user-name d-flex shadow">
+                        <img src="img/logo-carousel/profile-pic-male_4811a1.svg" alt="">
+                        <h4>Hello</h4>
                     </div>
+                            <div class=" shadow">
+                                <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                                    <li class=" bg-white">
+                                        <a class="" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                            aria-controls="home" aria-selected="true">
+                                            <div class="order-title d-flex justify-content-between">
+                                                <i class="fa fa-upload" aria-hidden="true"></i>
+                                                <h5>MY ORDERS</h5>
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <hr>
+                                        </a>
+                                    </li>
+                                    <li class=" bg-white">
+                                        <a class="">
+                                            <div class="account-details d-flex justify-content-between">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <h5>ACCOUNT SETTING</h5>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </div>   
+                                        </a>
+                                    </li>
+                                    <li class=" account-info bg-white">
+                                        <a class="" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                            aria-controls="profile" aria-selected="false">
+                                            <h6 class="mr-4 mt-3">Profile Information</h6>
+                                        </a>
+                                    </li>
+                                    <li class=" account-info bg-white">
+                                        <a class="" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                            aria-controls="contact" aria-selected="false">
+                                            <h6 class="mr-3 mt-3" >
+                                                Manage Addressess
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <a>
+                                            <div class="log-out d-flex">
+                                                <i class="fa fa-sign-in ml-3" aria-hidden="true"></i>
+                                                <h5 class="ml-5 pb-4">Logout</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
                 </div>
                 <div class="col-lg-8 col-md-7">
-                    <div class="tab-content" id="myTabContent3">
-                        <div class="tab-pane fade show active shadow" id="home-vertical" role="tabpanel" aria-labelledby="home-vertical-tab">
-                          
+                    <div class="">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h2>Order page</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed
+                                    accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem
+                                    blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                            </div>
+                            <div class="tab-pane fade show active shadow pb-3" id="profile" role="tabpanel"
+                                aria-labelledby="profile-tab">
+                                <form class="container biling-section">
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label class="gender-opt" for="inputEmail4">First Name</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label class="gender-opt" for="inputPassword4">Last Name</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="">
+                                      </div>
+                                    </div>
+                                    <p class="gender-opt">Your Gender</p>
+                                        <div class="gender d-flex">
+                                            <input type="radio" id="male" value="male">
+                                            <label for="male">Male</label><br>
+                                            <input type="radio" id="female" value="female">
+                                            <label for="male">Female</label><br>
+                                        </div>
+                                    <div class="form-group">
+                                      <label class="gender-opt" for="inputAddress">Address</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary ">Submit</button>
+                                  </form>
+                                <!-- <div class="personal-details d-flex row">
+                                    <h4>Personal Information</h4>
+                                    <h6>Edit</h6>
+                                </div>
+                                <div class="input-box">
+                                    <div class="col-lg-6"><input type="text"></div>
+                                    <div class="col-lg-6"><input type="text"></div>
+                                </div>
+                                <p class="gender-opt">Your Gender</p>
+                                <div class="gender d-flex">
+                                    <input type="radio" id="male" value="male">
+                                    <label for="male">Male</label><br>
+                                    <input type="radio" id="female" value="female">
+                                    <label for="male">Female</label><br>
+                                </div>
+                                <div class="email">
+                                    <div class="d-flex">
+                                        <h4>Email Address</h4>
+                                        <h6>Edit</h6>
+                                    </div>
+                                    <div class="input-box"><input type="text" name="" id=""></div>
+                                </div>
+                                <div class="mob-number">
+                                    <div class="d-flex">
+                                        <h4>Mobile Number</h4>
+                                        <h6>Edit</h6>
+                                    </div>
+                                    <div class="input-box mb-5"> <input type="text"></div>
+                                </div> -->
+                            </div>
+                            <div class="tab-pane fade shadow" id="contact" role="tabpanel"
+                                aria-labelledby="contact-tab">
+                                <section class="pt-5 biling-section">
+                                    <div class="container-fluid">
+                                        <form action="#" class="checkout-form">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h4>Biiling Details</h4>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <label for="fir">First Name<span>*</span></label>
+                                                            <input type="text" id="fir">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label for="last">Last Name<span>*</span></label>
+                                                            <input type="text" id="last">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <label for="cun">Country<span>*</span></label>
+                                                            <input type="text" id="cun">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <label for="street">Street Address<span>*</span></label>
+                                                            <input type="text" id="street" class="street-first">
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <label for="zip">Postcode / ZIP (optional)</label>
+                                                            <input type="text" id="zip">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <label for="town">Town / City<span>*</span></label>
+                                                            <input type="text" id="town">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label for="email">Email Address<span>*</span></label>
+                                                            <input type="text" id="email">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <label for="phone">Phone<span>*</span></label>
+                                                            <input type="text" id="phone">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="create-item">
+                                                                <label for="acc-create">
+                                                                    Create an account?
+                                                                    <input type="checkbox" id="acc-create">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkout-content mt-5">
+                                                        <a href="#" class="content-btn">Click Here To Login</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+
                         </div>
-                        <div class="tab-pane fade" id="profile-vertical" role="tabpanel" aria-labelledby="profile-vertical-tab">
+                        <!-- <div class="tab-content" id="myTabContent3">
+                        <div class="tab-pane fade show active shadow" id="home-vertical" role="tabpanel" aria-labelledby="home-vertical-tab">
+                          this is order
+                        </div>
+                        <div class="tab-pane fade shadow pb-3" id="profile-vertical" role="tabpanel" aria-labelledby="profile-vertical-tab">
                             <div class="personal-details d-flex">
                                 <h4>Personal Information</h4>
                                 <h6>Edit</h6>
                             </div>
                             <div class="input-box d-flex">
                                 <div class="input-box ml-1 mt-1"><input type="text"></div>
-                                <div class="input-box ml-1 mt-1"><input type="text"></div>
+                                <div class="input-box mt-1"><input type="text"></div>
                             </div>
                             <p class="gender-opt">Your Gender</p>
                             <div class="gender d-flex">
@@ -200,15 +329,77 @@
                                 <div class="input-box mb-5"> <input type="text"></div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contact-vertical" role="tabpanel" aria-labelledby="contact-vertical-tab">
-                            <h3>Tab Heading</h3>
-                            <p>Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras pulvinar mattis. Amet risus nullam eget felis eget nunc lobortis mattis. Lacus viverra vitae congue eu. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Est placerat in egestas erat imperdiet sed euismod.</p>
+                        <div class="tab-pane fade shadow" id="contact-vertical" role="tabpanel" aria-labelledby="contact-vertical-tab">
+                            <section class="checkout-section spad">
+                                <div class="container-fluid">
+                                    <form action="#" class="checkout-form">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="checkout-content">
+                                                    <a href="#" class="content-btn">Click Here To Login</a>
+                                                </div>
+                                                <h4>Biiling Details</h4>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label for="fir">First Name<span>*</span></label>
+                                                        <input type="text" id="fir">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="last">Last Name<span>*</span></label>
+                                                        <input type="text" id="last">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <label for="cun-name">Company Name</label>
+                                                        <input type="text" id="cun-name">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <label for="cun">Country<span>*</span></label>
+                                                        <input type="text" id="cun">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <label for="street">Street Address<span>*</span></label>
+                                                        <input type="text" id="street" class="street-first">
+                                                        <input type="text">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <label for="zip">Postcode / ZIP (optional)</label>
+                                                        <input type="text" id="zip">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <label for="town">Town / City<span>*</span></label>
+                                                        <input type="text" id="town">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="email">Email Address<span>*</span></label>
+                                                        <input type="text" id="email">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="phone">Phone<span>*</span></label>
+                                                        <input type="text" id="phone">
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="create-item">
+                                                            <label for="acc-create">
+                                                                Create an account?
+                                                                <input type="checkbox" id="acc-create">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                            
                         </div>
+                    </div> -->
                     </div>
                 </div>
             </div>
-        </div>
-      </section>
+    </section>
     <!-- user detail end -->
 
 
@@ -274,10 +465,12 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="copyright-text">
-                            
 
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://www.viwosoft.com/" target="_blank">@Viwosoft</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+                                href="https://www.viwosoft.com/" target="_blank">@Viwosoft</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
                             <img src="img/payment-method.png" alt="">
@@ -290,6 +483,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
