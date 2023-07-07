@@ -153,6 +153,17 @@
                                         </a>
                                     </li>
                                     <hr>
+                                    <li class=" bg-white">
+                                        <a class="" id="wish-tab" data-toggle="tab" href="#wish" role="tab"
+                                            aria-controls="wish" aria-selected="true">
+                                            <div class="order-title d-flex justify-content-between">
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <h5>MY WISHLIST</h5>
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </div>
+                                            <hr>
+                                        </a>
+                                    </li>
                                     <li>
                                         <a>
                                             <div class="log-out d-flex">
@@ -168,35 +179,103 @@
                 <div class="col-lg-8 col-md-7">
                     <div class="">
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h2>Order page</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed
-                                    accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem
-                                    blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">  
+                                <h3>ORDER PAGE</h3>
+                                <!-- <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="#" class="btn btn-secondary disabled mt-3">OR1234567891234</a>
+                                        <div class="order-section d-flex mt-4 card-body">
+                                            <img src="./img/CR1.webp" alt="" weight="100" height="100">
+                                            <div class="order-section-detail ml-4 mt-2">
+                                                <h4>FLOWER</h4>
+                                                <h5 class="mt-3">Leaves</h5>
+                                                <span class="mt-3">Color :</span><span>Black</span>
+                                            </div>
+                                            <div class="order-price ml-5 ">
+                                                <h6>₹500</h6>
+                                                <span class="text-success span ">OFFER :</span>1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a href="#" class="btn btn-primary mt-" style="float: right;"><i class="fa fa-map-marker" aria-hidden="true"></i>TRACK</a>
+                                        <div class="order-section d-flex card-body">
+                                            <div class="order-date">
+                                                <h6>Delivered on Sun, Dec 4th 22</h6>
+                                                <p>Your order has been placed</p>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="cancel ml-1"><button>
+                                                    Cancel</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                               <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4">
+                                        <img src="./img/CR1.webp" alt="" weight="80" height="100">
+                                    </div>
+                                    <div class="col-lg-2 col-md-4">
+                                        <div class="order-section-detail ml-4 mt-2">
+                                            <h4>FLOWER</h4>
+                                            <h5 class="mt-3">Leaves</h5>
+                                            <span class="mt-3">Color :</span><span>Black</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4">
+                                        <div class="order-price ml-5 ">
+                                            <h6>₹500</h6>
+                                            <span class="text-success span ">OFFER :</span>1
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="order-date">
+                                            <h6>Delivered on Sun, Dec 4th 22</h6>
+                                            <p>Your order has been placed</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4">
+                                        <div>
+                                            <a href="#" class="cancel ml-1">
+                                                Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
                             </div>
+                            
                             <div class="tab-pane fade show active shadow pb-3" id="profile" role="tabpanel"
                                 aria-labelledby="profile-tab">
-                                <form class="container biling-section">
+                                <form class="container biling-section" name="myForm" onsubmit="return validate()">
+                                    <h4>Profile Information</h4>
                                     <div class="form-row">
                                       <div class="form-group col-md-6">
-                                        <label class="gender-opt" for="inputEmail4">First Name</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="">
+                                        <label class="gender-opt" for="">First Name</label>
+                                        <input type="text" class="form-control" id="firstname" placeholder="">
+                                        <span id="firstName" style="color:red"></span>
                                       </div>
                                       <div class="form-group col-md-6">
-                                        <label class="gender-opt" for="inputPassword4">Last Name</label>
-                                        <input type="password" class="form-control" id="inputPassword4" placeholder="">
+                                        <label class="gender-opt" for="">Last Name</label>
+                                        <input type="text" class="form-control" id="lastname" placeholder="">
+                                        <span id="lastName" style="color:red"></span>
                                       </div>
                                     </div>
                                     <p class="gender-opt">Your Gender</p>
                                         <div class="gender d-flex">
-                                            <input type="radio" id="male" value="male">
-                                            <label for="male">Male</label><br>
-                                            <input type="radio" id="female" value="female">
-                                            <label for="male">Female</label><br>
+                                            <label for="female">
+                                                <input type="radio" id="female" name="gender" value="female"> Female
+                                            </label>
+                                            <label for="male">
+                                                <input type="radio" id="male" name="gender" value="male"> Male
+                                            </label>
+                                            <br>
+                                            <span id="Gender" style="color: red;"></span>
                                         </div>
                                     <div class="form-group">
-                                      <label class="gender-opt" for="inputAddress">Address</label>
-                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                      <label class="gender-opt" for="">Address</label>
+                                      <input type="text" class="form-control" id="Address" placeholder="1234 Main St">
+                                      <span id="address" style="color:red"></span>
                                     </div>
                                     <button type="submit" class="btn btn-primary ">Submit</button>
                                   </form>
@@ -234,27 +313,35 @@
                                 aria-labelledby="contact-tab">
                                 <section class="pt-5 biling-section">
                                     <div class="container-fluid">
-                                        <form action="#" class="checkout-form">
+                                        <form action="" class="checkout-form" onsubmit="return validation()">
                                             <div class="row">
                                                 <div class="col-lg-12">
-                                                    <h4>Biiling Details</h4>
+                                                    <h4>Manage Addressess</h4>
                                                     <div class="row">
                                                         <div class="col-lg-6">
-                                                            <label for="fir">First Name<span>*</span></label>
-                                                            <input type="text" id="fir">
+                                                            <label for="">First Name<span>*</span></label>
+                                                            <input type="text" id="detailname">
+                                                            <br>
+                                                            <span id="detailName" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <label for="last">Last Name<span>*</span></label>
-                                                            <input type="text" id="last">
+                                                            <input type="text" id="detaillast">
+                                                            <br>
+                                                            <span id="detailLast" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <label for="cun">Country<span>*</span></label>
                                                             <input type="text" id="cun">
+                                                            <br>
+                                                            <span id="cunt" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <label for="street">Street Address<span>*</span></label>
                                                             <input type="text" id="street" class="street-first">
                                                             <input type="text">
+                                                            <br>
+                                                            <span id="streetName" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <label for="zip">Postcode / ZIP (optional)</label>
@@ -263,14 +350,20 @@
                                                         <div class="col-lg-12">
                                                             <label for="town">Town / City<span>*</span></label>
                                                             <input type="text" id="town">
+                                                            <br>
+                                                            <span id="city" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <label for="email">Email Address<span>*</span></label>
                                                             <input type="text" id="email">
+                                                            <br>
+                                                            <span id="mail" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <label for="phone">Phone<span>*</span></label>
                                                             <input type="text" id="phone">
+                                                            <br>
+                                                            <span id="phoneNum" style="color:red"></span>
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <div class="create-item">
@@ -282,17 +375,58 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- <div class="checkout-content mt-5">
+                                                        <a href="#" class="content-btn btn">Click Here To Login</a>
+                                                    </div> -->
                                                     <div class="checkout-content mt-5">
-                                                        <a href="#" class="content-btn">Click Here To Login</a>
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </form>
                                     </div>
                                 </section>
                             </div>
-
+                            <div class="tab-pane fade " id="wish" role="tabpanel" aria-labelledby="wish-tab">
+                                <section class="shopping-cart spad pb-2 shadow">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="cart-table">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="cart-pic first-row"><img src="img/cart-page/product-4.webp" alt=""></td>
+                                                                <td class="cart-title first-row">
+                                                                    <h5 class="ml-2">Pure Pineapple</h5>
+                                                                </td>
+                                                                <td class="p-price first-row">$60.00</td>
+                                                                <td class="close-td first-row"><i class="ti-close"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cart-pic"><img src="img/cart-page/product-5.webp" alt=""></td>
+                                                                <td class="cart-title">
+                                                                    <h5 class="ml-2">American lobster</h5>
+                                                                </td>
+                                                                <td class="p-price">$60.00</td>
+                                                                <td class="close-td"><i class="ti-close"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cart-pic"><img src="img/cart-page/product-6.webp" alt=""></td>
+                                                                <td class="cart-title">
+                                                                    <h5 class="ml-2">Guangzhou sweater</h5>
+                                                                </td>
+                                                                <td class="total-price">$60.00</td>
+                                                                <td class="close-td"><i class="ti-close"></i></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
                         <!-- <div class="tab-content" id="myTabContent3">
                         <div class="tab-pane fade show active shadow" id="home-vertical" role="tabpanel" aria-labelledby="home-vertical-tab">

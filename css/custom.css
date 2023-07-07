@@ -242,7 +242,27 @@
     margin-right: 0px;
     border-bottom: 0;
 }
+/***** address*****/
+.checkout-form input {
+    margin-bottom: 7px !important;
+}
+/********usertexthtml*******/
 
+/* .tab-pane .order-price {
+    margin-top: -49px;
+}
+.tab-pane .order-status span{
+    font-size: 15px;
+}
+.tab-pane .order-section h5{
+    margin-top: 58px;
+}
+.tab-pane .order-section p{
+    font-size: 13px;
+}
+.tab-pane .order-section .cancel{
+    margin: 10px -50px;
+} */
 
 /* ================Responsive Media style==========
 =========================*/
@@ -395,6 +415,17 @@
         .nav-item .nav-menu li a {
             margin-left: -3px !important;
             margin-right: -14px !important;
+        }
+        .nav-item .nav-menu li .dropdown{
+            background-color: white !important;
+            right: -287px !important;
+            width: 360px !important;
+        }
+        .nav-item .nav-menu li .dropdown-left{
+            right: -57px !important;
+        }
+        .nav-item .nav-menu li .dropdown a{
+            color: black !important;
         }
         .product-large {
             height: 293px !important;
