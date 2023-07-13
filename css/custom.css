@@ -248,21 +248,26 @@
 }
 /********usertexthtml*******/
 
-/* .tab-pane .order-price {
-    margin-top: -49px;
+.tab-pane .order-price {
+    margin-top: 9px;
+    font-size: 12px;
+}
+.tab-pane .order-date{
+    margin-top: 90px;
+    margin-left: 9px;
 }
 .tab-pane .order-status span{
     font-size: 15px;
 }
-.tab-pane .order-section h5{
-    margin-top: 58px;
-}
+
 .tab-pane .order-section p{
     font-size: 13px;
 }
 .tab-pane .order-section .cancel{
-    margin: 10px -50px;
-} */
+        position: absolute;
+        top: 108px;
+        right: 23px; 
+}
 
 /* ================Responsive Media style==========
 =========================*/
@@ -405,6 +410,9 @@
         }
     }
     @media (min-width : 767px) and (max-width : 2400px){
+        .hide-sec{
+            display: none !important;
+        }
         .no-gutters .float-left img{
             display: none;
         }
@@ -417,7 +425,7 @@
             margin-right: -14px !important;
         }
         .nav-item .nav-menu li .dropdown{
-            background-color: white !important;
+            /* background-color: #e0dbdb !important; */
             right: -287px !important;
             width: 360px !important;
         }
@@ -425,7 +433,7 @@
             right: -57px !important;
         }
         .nav-item .nav-menu li .dropdown a{
-            color: black !important;
+            color: white !important;
         }
         .product-large {
             height: 293px !important;
